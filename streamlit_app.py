@@ -1,8 +1,10 @@
 import streamlit as st
 import geopandas as gpd
+import pandas as pd  # <-- Add this
 from shapely.ops import unary_union
 from shapely.validation import make_valid
 import leafmap.foliumap as leafmap
+
 
 st.set_page_config(page_title="Polygon Geometry Checker", layout="wide")
 
